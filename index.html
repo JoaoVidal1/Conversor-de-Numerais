@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="oper = 5, changeNav()">
+    <header>
+        <h1>
+            CONVERTER
+        </h1>
+        <nav>
+            <ul id="nav-list">          
+                <li><input type="button" value="ÁTICOS" onclick="oper = 0, changeNav()" class="nav-btn" id="attic"></li>
+                <li><input type="button" value="CAROSTE" onclick="oper = 1, changeNav()" class="nav-btn" id="caros"></li>
+                <li><input type="button" value="EGÍPCIOS" onclick="oper = 2, changeNav()" class="nav-btn" id="egypt"></li>
+                <li><input type="button" value="ETRUSCOS" onclick="oper = 3, changeNav()" class="nav-btn" id="etrus"></li>
+                <li><input type="button" value="PSALTER" onclick="oper = 4, changeNav()" class="nav-btn" id="psalt"></li>
+                <li><input type="button" value="ROMANOS" onclick="oper = 5, changeNav()" class="nav-btn" id="roman"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="resultado" class="main" pre></div>
+        <div id="inputDiv">
+            <input type="text" id="input" class="main" placeholder="Insira um número de 1 a 3999999" oninput="convert()">
+            <a href="https://en.wikipedia.org/wiki/Roman_numerals" id="ajuda" class="main">AJUDA</a>
+        </div>
+        
+    </main>
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Attic_numerals#The_system">ALGARISMOS ÁTICOS</a>
+        <a href="https://en.wikipedia.org/wiki/Kharosthi#Numerals">ALGARISMOS CAROSTE</a>
+        <a href="https://en.wikipedia.org/wiki/Egyptian_numerals#Digits_and_numbers">ALGARISMOS EGÍPCIOS</a>
+        <a href="https://en.wikipedia.org/wiki/Etruscan_numerals">ALGARISMOS ETRUSCOS</a>
+        <a href="https://en.wikipedia.org/wiki/Psalter_Pahlavi#Numbers">ALGARISMOS PERSAS</a>
+        <a href="https://en.wikipedia.org/wiki/Roman_numerals">ALGARISMOS ROMANOS</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
